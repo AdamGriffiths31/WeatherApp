@@ -14,7 +14,7 @@ class City(db.Model):
     name = db.Column(db.String(50), nullable=False)
 
 def get_weather_data(city):
-    url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid=53080f992bd3253ff4385aed0a1711bf'
+    url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid=KEY'
     r = requests.get(url).json()
     return r
 
